@@ -1,0 +1,28 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="AGPL v3"
+issueTrackerURL="https://github.com/Viola-Siemens/Bedrock-Redux/issues"
+
+[[mods]]
+modId="bedrock_redux"
+version="${file.jarVersion}"
+displayName="Bedrock Redux"
+credits="Liu Dongyu, Blue_rose"
+authors="Liu Dongyu, Blue_rose"
+description='''
+A minecraft mod that ports some features from Bedrock edition to Java edition.
+'''
+
+[[dependencies.bedrock_redux]]
+    modId="forge"
+    mandatory=true
+    versionRange="[47,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.bedrock_redux]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20,1.21)"
+    ordering="NONE"
+    side="BOTH"
