@@ -136,6 +136,9 @@ repositories {
 
 dependencies {
     minecraft 'net.minecraftforge:forge:1.20.1-47.2.0'
+
+    compileOnly annotationProcessor('io.github.llamalad7:mixinextras-common:0.4.1')
+    implementation "io.github.llamalad7:mixinextras-forge:0.4.1"
     
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
 }
