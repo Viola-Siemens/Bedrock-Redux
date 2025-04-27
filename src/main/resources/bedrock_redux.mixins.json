@@ -5,6 +5,8 @@
   "refmap": "bedrock_redux.refmap.json",
   "mixins": [
     "NaturalSpawnerMixin",
+    "PiglinAiMixin",
+    "PistonBaseBlockMixin",
     "WaterAnimalMixin"
   ],
   "minVersion": "0.8",
