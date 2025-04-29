@@ -19,10 +19,15 @@ A minecraft mod that ports some features from Bedrock edition to Java edition.
     versionRange="[47,)"
     ordering="NONE"
     side="BOTH"
-
 [[dependencies.bedrock_redux]]
     modId="minecraft"
     mandatory=true
     versionRange="[1.20,1.21)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.bedrock_redux]]
+    modId="mixinextras"
+    mandatory=true
+    versionRange="[0,)"
     ordering="NONE"
     side="BOTH"
