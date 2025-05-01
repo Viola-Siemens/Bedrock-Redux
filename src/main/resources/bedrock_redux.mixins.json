@@ -5,6 +5,7 @@
   "refmap": "bedrock_redux.refmap.json",
   "mixins": [
     "AbstractArrowMixin",
+    "MobMixin",
     "NaturalSpawnerMixin",
     "PiglinAiMixin",
     "PistonBaseBlockMixin",
