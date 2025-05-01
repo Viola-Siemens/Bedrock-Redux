@@ -19,6 +19,13 @@ public class ThrownTridentMixin {
 	@ModifyConstant(method = "onHitEntity", constant = @Constant(floatValue = 8.0F))
 	private float bedrock_redux$addAttributeValue(float constant) {
 		ThrownTrident current = (ThrownTrident)(Object)this;
-		return constant + (current.getOwner() instanceof LivingEntity livingEntity ? (float)livingEntity.getAttributeValue(Attributes.ATTACK_DAMAGE) - 1.0F : 0.0F);
+		float adder = 0.0F;
+		if(current.getOwner() instanceof LivingEntity livingEntity) {
+			adder = (float)livingEntity.getAttributeValue(Attributes.ATTACK_DAMAGE) - 1.0F;
+			if(adder < -1.0F) {
+				adder = -1.0F;
+			}
+		}
+		return constant + adder;
 	}
 }
