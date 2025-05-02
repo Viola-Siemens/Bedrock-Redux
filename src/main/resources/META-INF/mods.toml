@@ -9,6 +9,7 @@ version="${file.jarVersion}"
 displayName="Bedrock Redux"
 credits="Liu Dongyu, Blue_rose"
 authors="Liu Dongyu, Blue_rose"
+logoFile="logo.png"
 description='''
 A minecraft mod that ports some features from Bedrock edition to Java edition.
 '''
